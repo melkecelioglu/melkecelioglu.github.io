@@ -1,90 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" />
+    <title>Flappy Bird</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLM19305 Advanced Pogramming Techniques</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #ffecf1;
-            color: #8e44ad;
-            text-align: center;
-        }
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" charset="utf-8"></script>
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  </head>
 
-        header {
-            background-color: rgb(231, 60, 180);
-            padding: 1em;
-            border-radius: 0 0 20px 20px;
-        }
-
-        h1 {
-            color: #fff;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 1em;
-            background-color: #f8bbd0;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-            border-radius: 20px;
-            color: #8e44ad;
-        }
-
-        h2 {
-            color:rgb(228, 24, 102);
-        }
-
-        p {
-            color: #424242;
-        }
-
-        .rounded-object {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            background-color: #8d9cde;
-            border-radius: 50%;
-            margin: 0 10px;
-        }
-
-        footer {
-            padding: 1em;
-            background-color: #e73c94;
-            border-radius: 20px 20px 0 0;
-        }
-
-        footer p {
-            color: #fff;
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <h1>BLM19305 Advanced Pogramming Techniques</h1>
-    </header>
-
-    <main>
-        <h2>Welcome to Melike's GitHub Page!</h2>
-        <p>This is a rounded objects-themed landing page with a pinky color palette.</p>
-        <p>Feel free to contact with me :)</p>
-        <br>
-        <div class="rounded-object"></div>
-        <div class="rounded-object"></div>
-        <div class="rounded-object"></div>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 melkecelioglu All rights reserved.</p>
-    </footer>
-
-</body>
-
+  <body>
+    <div class="game-container">
+   
+      <div class="border-top"></div>
+      <div class="sky">
+        <div class="bird"></div>
+        <div class="heart"><p id="p3">0</p></div>
+      </div>
+      <div class="screen" id="gameover" style="display:none;">
+        <h2>Game Over</h2>
+        <button  class="buton" onclick="restartGame()">Start New Game</button>
+      </div>
+      <div id="instruction" >
+      </div>
+    </div>
+    <div class="ground-container">
+      <p id="p1">Your Score:<span id="score"></span></p>
+      <p id="p2">Highest Score: <span id="high"></span></p>
+      <div class="ground-moving">
+       <p id="p4"><a href="https://www.youtube.com/watch?v=8xPsg6yv7TU&t=3102s">Referans</a></p>
+      </div>
+      
+    </div>
+    <div class="border-right"></div>
+    <audio id="audio" src="./sounds_fly.mp3"></audio>
+    <audio id="audio2" src="./sounds_score.mp3"></audio>
+    <audio id="audio3" src="./res_audio_hit.mp3"></audio>
+    <audio id="audio4" src="./Victory-SoundEffect.mp3"></audio>
+  
+    <script>
+function restartGame() {
+      window.location.reload();
+      console.log('Starting new game');
+    }
+  
+  </script>
+  </body>
 </html>
+
