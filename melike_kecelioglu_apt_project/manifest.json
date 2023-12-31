@@ -1,0 +1,17 @@
+{
+    "name": "Term Project-",
+    "short_name": "Flappy Bird",
+    "icons": [{
+        "src": "flappy-bird.png",
+        "sizes": "60x45",
+        "type": "image/png"
+    }, {
+        "src": "logo.png",
+        "sizes": "144x144",
+        "type": "image/png"
+    }],
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#5d6bc7",
+    "theme_color": "#172387"
+}
