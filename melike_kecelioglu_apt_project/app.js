@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function collectHeart() {
       bonusCount++;
       document.getElementById('p3').innerText = bonusCount;
-   pointSound.play();
+  // pointSound.play();
       try {
           heavens.removeChild(bonus);
       } catch (error) {
