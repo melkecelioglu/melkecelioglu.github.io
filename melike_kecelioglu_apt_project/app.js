@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
       clearInterval(obstacleTimerId);
       gameArea.removeChild(obs);
       gameArea.removeChild(topObs);
-    collisionSound.play();
+   // collisionSound.play();
   }
 
   function endGame(obs, topObs) {
@@ -208,6 +208,6 @@ document.addEventListener('DOMContentLoaded', function() {
       movingGround.classList.add('ground');
       movingGround.classList.remove('ground-moving');
       document.getElementById("gameover").style.display = "block";
-  winSound.play();
+  //winSound.play();
   }
 });
