@@ -4,59 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>its, mel</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Melike Kecelioglu | Web3 Journey</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: "Courier New", Courier, monospace;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
-            color: #343a40;
+            background-color: #ffffff;
+            color: #0f2831;
+            font-size: 15px;
+            
         }
-        
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            max-width: 1200px;
+
+        .date {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 15px;
+            color: #cfcfcf;
         }
 
         header {
+            margin: 20px 0;
             text-align: center;
-            padding: 50px 20px;
-            border-bottom: 1px solid #dee2e6;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 18px;
             margin: 0;
-            color: #212529;
+            color: #0f2831;
         }
 
         header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            color: #6c757d;
+            font-size: 15px;
+            color: #0f2831;
         }
 
-        .section {
-            margin: 50px 0;
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px;
+            max-width: 800px; /* Sağ ve sol boşluklar için maksimum genişlik */
         }
 
         .section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #212529;
+            font-size: 15px;
+            margin-bottom: 10px;
         }
 
         .info {
-            font-size: 1.1rem;
-            line-height: 1.8;
+            font-size: 15px;
+            line-height: 1.5;
         }
 
         .info a {
-            color: #007bff;
+            color: #0000EE; /* Hyperlink mavi renk */
             text-decoration: none;
         }
 
@@ -64,51 +67,153 @@
             text-decoration: underline;
         }
 
+        .contribution-container {
+            margin-top: 30px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .contribution-title {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .contribution-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 10px); /* 6 hafta */
+            grid-template-rows: repeat(7, 10px); /* 7 gün */
+            gap: 4px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .square {
+            width: 10px;
+            height: 10px;
+            background-color: #2d2d2d; /* Boş kare */
+            border-radius: 2px;
+        }
+
+        .square[data-level="1"] {
+            background-color: #9be9a8; /* Hafif yeşil */
+        }
+
+        .square[data-level="2"] {
+            background-color: #40c463; /* Orta yeşil */
+        }
+
+        .square[data-level="3"] {
+            background-color: #30a14e; /* Daha koyu yeşil */
+        }
+
+        .square[data-level="4"] {
+            background-color: #216e39; /* En koyu yeşil */
+        }
+
         footer {
             text-align: center;
-            padding: 20px 0;
-            border-top: 1px solid #dee2e6;
-            margin-top: 50px;
-            color: #6c757d;
-            font-size: 0.9rem;
+            margin-top: 30px;
+            font-size: 15px;
+            color: #888;
         }
     </style>
 </head>
 
 <body>
+    <div class="date" id="current-date"></div>
+
     <header>
-        <h1>here my profile</h1>
-        <p>A minimalist and professional design for showcasing profiles and projects</p>
+        <h1>Melike Kecelioglu</h1>
+        <p>Technical Product Owner</p>
     </header>
 
     <div class="container">
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <div class="info">
+                <p>
+                    This page serves as a reflection of my Web3 journey—highlighting my writings, projects, and the milestones that define my exploration of decentralized systems.
+                </p>
+            </div>
+        </div>
+
         <div class="section" id="profile">
             <h2>Profile</h2>
             <div class="info">
-                <p><strong>Name:</strong> Melike Kecelioglu</p>
-                <p><strong>Email:</strong> melike.kecelioglu@stu.fsm.edu.tr</p>
-                <p>
-                    <strong>GitHub:</strong>
-                    <a href="https://github.com/melkecelioglu" target="_blank">github.com/melkecelioglu</a>
+                <p><strong>[X]:</strong> 
+                    <a href="https://x.com/melkecelioglu" target="_blank">
+                        https://x.com/melkecelioglu
+                    </a>
+                </p>
+                <p><strong>[Mail]:</strong> 
+                    <a href="mailto:melkecelioglu@gmail.com" target="_blank">
+                        melkecelioglu@gmail.com
+                    </a>
+                </p>
+                <p><strong>[GitHub]:</strong> 
+                    <a href="https://github.com/melkecelioglu" target="_blank">
+                        https://github.com/melkecelioglu
+                    </a>
                 </p>
             </div>
         </div>
 
         <div class="section" id="projects">
-            <h2>Advanced Programming Techniques Term Project</h2>
+            <h2>Highlighted Projects</h2>
             <div class="info">
                 <p>
-                    <a href="https://melkecelioglu.github.io/melike_kecelioglu_apt_project/index.html" target="_blank">
-                        Flappy Bird
+                    <a href="https://github.com/melkecelioglu" target="_blank">
+                        Blockchain-Based Projects - Bridging WW into WWW
                     </a>
                 </p>
+            </div>
+        </div>
+
+        <div class="section" id="web3-journey">
+            <h2>My Web3 Journey</h2>
+            <div class="info">
+                <p>
+                    Over the past two years, I have immersed myself in the transformative potential of Web3. My work spans smart contract development, decentralized application (dApp) architecture, and tokenomics design. My writings and projects reflect this journey, providing insights into the challenges and opportunities of this rapidly evolving space.
+                </p>
+            </div>
+        </div>
+
+        <div class="contribution-container">
+            <h2 class="contribution-title">My Contribution Activity</h2>
+            <div class="contribution-grid" id="contribution-grid">
+                <!-- Katkı kareleri JavaScript ile doldurulacak -->
             </div>
         </div>
     </div>
 
     <footer>
-        <p>© 2024 LambdaClass Style. All rights reserved.</p>
+        <p>© 2024 Melike Kecelioglu. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Sağ üst köşeye bugünün tarihini ekleme
+        const currentDateElement = document.getElementById("current-date");
+        const now = new Date();
+        currentDateElement.innerText = now.toLocaleDateString("en-US", {
+            weekday: "short",
+            year: "numeric",
+            month: "short",
+            day: "numeric"
+        });
+
+        // Katkı karelerini doldurma (sadece ilk iki gün yeşil renk)
+        const contributionGrid = document.getElementById("contribution-grid");
+        for (let i = 0; i < 42; i++) { // 6 hafta x 7 gün = 42 kare
+            const square = document.createElement("div");
+            square.classList.add("square");
+            if (i === 0 || i === 6) {
+                square.dataset.level = 2; // Koyu yeşil
+            } else {
+                square.dataset.level = 0; // Katkı yok
+            }
+            contributionGrid.appendChild(square);
+        }
+    </script>
 </body>
 
 </html>
