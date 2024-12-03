@@ -2,52 +2,113 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile and Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>its, mel</title>
     <style>
-        .body { 
-            font-family: Arial, sans-serif; 
-            text-align: center; 
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
         }
-        .header { 
-            color: #333; 
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1200px;
         }
-        .info { 
-            color: #666; 
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 1px solid #dee2e6;
         }
-        .link_2 { 
-            color: #1a0dab; 
-            text-decoration: none; 
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #212529;
         }
-        .link_2:hover { 
-            text-decoration: underline; 
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #6c757d;
+        }
+
+        .section {
+            margin: 50px 0;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #212529;
+        }
+
+        .info {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #dee2e6;
+            margin-top: 50px;
+            color: #6c757d;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 
-<body class="body">
-    <div class="panel" id="panel">
-        <div class="inner_panel" id="personal_div">
-            <h1 class="header">Profile</h1>
-            <div class="inner_inner_panel">
-                <h2 class="info">Melike Kecelioglu</h2>
-                <h2 class="info">melike.kecelioglu@stu.fsm.edu.tr</h2>
-                <a class="link_2" href="https://github.com/melkecelioglu" target="_blank">
-                    github.com/melkecelioglu
-                </a>
+<body>
+    <header>
+        <h1>here my profile</h1>
+        <p>A minimalist and professional design for showcasing profiles and projects</p>
+    </header>
+
+    <div class="container">
+        <div class="section" id="profile">
+            <h2>Profile</h2>
+            <div class="info">
+                <p><strong>Name:</strong> Melike Kecelioglu</p>
+                <p><strong>Email:</strong> melike.kecelioglu@stu.fsm.edu.tr</p>
+                <p>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/melkecelioglu" target="_blank">github.com/melkecelioglu</a>
+                </p>
             </div>
         </div>
-        <div class="inner_panel" id="pr_div">
-            <h1 class="header">Advanced Programming Techniques Term Project</h1>
-            <div class="inner_inner_panel">
-                <a class="link" href="https://melkecelioglu.github.io/melike_kecelioglu_apt_project/index.html">
-                    Flappy Bird
-                </a>
+
+        <div class="section" id="projects">
+            <h2>Advanced Programming Techniques Term Project</h2>
+            <div class="info">
+                <p>
+                    <a href="https://melkecelioglu.github.io/melike_kecelioglu_apt_project/index.html" target="_blank">
+                        Flappy Bird
+                    </a>
+                </p>
             </div>
         </div>
     </div>
+
+    <footer>
+        <p>© 2024 LambdaClass Style. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
